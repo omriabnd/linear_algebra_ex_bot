@@ -1,0 +1,4 @@
+interface:
+  display_name: "Linear Algebra 1 Exercise"
+  short_description: "Generate exercises by difficulty level"
+  default_prompt: "Use $linear-algebra-1-exercise to generate a Linear Algebra 1 exercise at difficulty 6."
