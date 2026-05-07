@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "student_id": "unknown-student",
+  "exercise_id": "la1-000002",
+  "submitted_at": "2026-05-07T12:35:00+03:00",
+  "graded_at": "2026-05-07T10:08:06+03:00",
+  "course": "Linear Algebra 1",
+  "exercise": {
+    "difficulty": 3,
+    "topics": [
+      "Matrix operations, inverses, and elementary matrices",
+      "Determinants"
+    ],
+    "prompt": "Let A = \\begin{pmatrix}1 & 2 \\\\ 3 & 4\\end{pmatrix}. Compute \\det(A)."
+  },
+  "grade": {
+    "score": 0.35,
+    "max_score": 1.0,
+    "is_correct": false,
+    "rubric": [
+      {
+        "criterion": "mathematical correctness",
+        "score": 0.0,
+        "max_score": 0.5,
+        "feedback": "The final determinant value is incorrect. The correct value is 1*4 - 2*3 = -2."
+      },
+      {
+        "criterion": "method and reasoning",
+        "score": 0.2,
+        "max_score": 0.35,
+        "feedback": "The solution recognizes that a 2x2 determinant should involve subtracting products, but it uses the wrong entries: 1*3 and 2*4 instead of 1*4 and 2*3."
+      },
+      {
+        "criterion": "notation and clarity",
+        "score": 0.15,
+        "max_score": 0.15,
+        "feedback": "The computation is clearly written and easy to follow."
+      }
+    ]
+  },
+  "diagnosis": {
+    "mastered_skills": [
+      "recognizes that a 2x2 determinant involves subtracting two products"
+    ],
+    "weaknesses": [
+      "selecting the correct diagonal products in the 2x2 determinant formula"
+    ],
+    "misconceptions": [
+      "uses column-wise products 1*3 and 2*4 instead of diagonal products ad and bc"
+    ],
+    "recommended_next_topics": [
+      "2x2 determinant formula",
+      "determinant practice with labeled entries a, b, c, d"
+    ]
+  },
+  "topic_level_updates": [
+    {
+      "topic": "Matrix operations, inverses, and elementary matrices",
+      "previous_level": null,
+      "new_level": null,
+      "confidence": 0.62,
+      "evidence": "The student identified the relevant matrix entries but paired them incorrectly."
+    },
+    {
+      "topic": "Determinants",
+      "previous_level": null,
+      "new_level": null,
+      "confidence": 0.78,
+      "evidence": "The student attempted a determinant computation but applied the 2x2 formula incorrectly."
+    }
+  ],
+  "feedback_to_student": "Not quite. For a 2x2 matrix \\begin{pmatrix}a & b \\\\ c & d\\end{pmatrix}, the determinant is ad - bc. Here that is 1*4 - 2*3 = -2. You used 1*3 - 2*4, which pairs the entries incorrectly."
+}
