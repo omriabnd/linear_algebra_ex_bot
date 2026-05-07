@@ -84,6 +84,21 @@ Return the result of grading a single exercise as JSON with this shape:
 
 Use `score` as a normalized value from `0` to `1`. Use `is_correct` for quick pass/fail decisions, but prefer the rubric and diagnosis for learning decisions. Keep `topic_level_updates` limited to topics directly evidenced by the submitted solution.
 
+## Exercise And Answer Pair Format
+
+Represent each exercise and submitted answer pair with a simple JSON object. Use this format as the canonical input to grading:
+
+```json
+{
+  "id": "la1-000001",
+  "exercise": "Let A = \\begin{pmatrix}1 & 2 \\\\ 3 & 4\\end{pmatrix}. Compute \\det(A).",
+  "solution": "\\det(A) = 1\\cdot4 - 2\\cdot3 = -2.",
+  "time_submitted": "2026-05-07T12:30:00+03:00"
+}
+```
+
+Use `id` as the unique identifier for the exercise-answer pair. Store `exercise` and `solution` as plain text strings with LaTeX allowed. Store `time_submitted` as an ISO 8601 timestamp with timezone.
+
 ## Student Representation And History Log
 
 Represent each student as one newline-delimited JSON (`.jsonl`) log containing the student's entire exercise-solution history. The log is the canonical student record. Each line is one immutable event, usually one graded exercise attempt. This makes the student representation append-only, easy to stream, and easy to recover if one record is malformed.
@@ -102,12 +117,13 @@ Each log line should use this shape:
   "event_type": "exercise_attempt_graded",
   "student_id": "student-123",
   "attempt_id": "attempt-20260507-0001",
-  "exercise_id": "la1-rank-nullity-0007",
+  "exercise_id": "la1-000001",
   "timestamp": "2026-05-07T12:01:30+03:00",
-  "exercise": {
-    "difficulty": 6,
-    "topics": ["rank-nullity", "null-space", "basis"],
-    "prompt_hash": "sha256:..."
+  "exercise_answer_pair": {
+    "id": "la1-000001",
+    "exercise": "Find a basis for the null space of A = \\begin{pmatrix}1 & 2 & -1 \\\\ 2 & 4 & -2 \\\\ 0 & 1 & 3\\end{pmatrix}.",
+    "solution": "Row-reducing gives y = -3z and x = 7z, so a basis is \\{(7,-3,1)\\}.",
+    "time_submitted": "2026-05-07T12:00:00+03:00"
   },
   "submission": {
     "answer_text_hash": "sha256:...",
