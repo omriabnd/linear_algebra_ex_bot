@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "student_id": "unknown-student",
+  "exercise_id": "la1-000001",
+  "submitted_at": "2026-05-07T12:30:00+03:00",
+  "graded_at": "2026-05-07T10:03:13+03:00",
+  "course": "Linear Algebra 1",
+  "exercise": {
+    "difficulty": 3,
+    "topics": [
+      "Matrix operations, inverses, and elementary matrices",
+      "Determinants"
+    ],
+    "prompt": "Let A = \\begin{pmatrix}1 & 2 \\\\ 3 & 4\\end{pmatrix}. Compute \\det(A)."
+  },
+  "grade": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "is_correct": true,
+    "rubric": [
+      {
+        "criterion": "mathematical correctness",
+        "score": 0.5,
+        "max_score": 0.5,
+        "feedback": "The determinant value is correct."
+      },
+      {
+        "criterion": "method and reasoning",
+        "score": 0.35,
+        "max_score": 0.35,
+        "feedback": "The solution correctly applies the 2x2 determinant formula ad - bc."
+      },
+      {
+        "criterion": "notation and clarity",
+        "score": 0.15,
+        "max_score": 0.15,
+        "feedback": "The computation is clearly written in acceptable LaTeX notation."
+      }
+    ]
+  },
+  "diagnosis": {
+    "mastered_skills": [
+      "computes determinants of 2x2 matrices",
+      "uses the determinant formula correctly"
+    ],
+    "weaknesses": [],
+    "misconceptions": [],
+    "recommended_next_topics": [
+      "determinants of 3x3 matrices",
+      "determinant properties under row operations"
+    ]
+  },
+  "topic_level_updates": [
+    {
+      "topic": "Matrix operations, inverses, and elementary matrices",
+      "previous_level": null,
+      "new_level": null,
+      "confidence": 0.72,
+      "evidence": "The student correctly used entries of a 2x2 matrix in a determinant computation."
+    },
+    {
+      "topic": "Determinants",
+      "previous_level": null,
+      "new_level": null,
+      "confidence": 0.82,
+      "evidence": "The student correctly computed det(A) = 1*4 - 2*3 = -2."
+    }
+  ],
+  "feedback_to_student": "Correct. You applied the 2x2 determinant formula accurately and wrote the computation clearly. A good next step is practicing determinant properties and larger matrices."
+}

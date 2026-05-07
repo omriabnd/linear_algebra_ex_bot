@@ -1,0 +1,6 @@
+{
+  "id": "la1-000001",
+  "exercise": "Let A = \\begin{pmatrix}1 & 2 \\\\ 3 & 4\\end{pmatrix}. Compute \\det(A).",
+  "solution": "\\det(A) = 1\\cdot4 - 2\\cdot3 = -2.",
+  "time_submitted": "2026-05-07T12:30:00+03:00"
+}

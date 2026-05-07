@@ -1,0 +1,4 @@
+interface:
+  display_name: "Linear Algebra 1 Evaluator"
+  short_description: "Evaluate submitted LA1 answers"
+  default_prompt: "Use $lin-algebra-1-assess to evaluate this Linear Algebra 1 question-answer JSON pair."
