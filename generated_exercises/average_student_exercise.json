@@ -1,0 +1,93 @@
+{
+  "dry_run": true,
+  "student_id": "student-average-001",
+  "warnings": [],
+  "generated_at": "2026-05-07T07:10:33.276809+00:00",
+  "topic_plan": [
+    {
+      "topic": "Systems of linear equations and Gaussian elimination",
+      "current_level": 4.9,
+      "confidence": 0.62,
+      "target_difficulty": 6,
+      "evidence": "directly assessed"
+    },
+    {
+      "topic": "Matrix operations, inverses, and elementary matrices",
+      "current_level": 3.67,
+      "confidence": 0.25,
+      "target_difficulty": 5,
+      "evidence": "not yet directly assessed; inferred conservatively from overall level"
+    },
+    {
+      "topic": "Vectors, linear combinations, span, and geometric interpretation",
+      "current_level": 3.67,
+      "confidence": 0.25,
+      "target_difficulty": 5,
+      "evidence": "not yet directly assessed; inferred conservatively from overall level"
+    },
+    {
+      "topic": "Linear independence, bases, coordinates, and dimension",
+      "current_level": 4.8,
+      "confidence": 0.55,
+      "target_difficulty": 6,
+      "evidence": "directly assessed"
+    },
+    {
+      "topic": "Subspaces, including column space, null space, row space, and their bases",
+      "current_level": 4.7,
+      "confidence": 0.58,
+      "target_difficulty": 6,
+      "evidence": "directly assessed"
+    },
+    {
+      "topic": "Rank, nullity, the rank-nullity theorem, and consistency criteria",
+      "current_level": 4.8,
+      "confidence": 0.6,
+      "target_difficulty": 6,
+      "evidence": "directly assessed"
+    },
+    {
+      "topic": "Linear transformations, kernels, images, standard matrices, and composition",
+      "current_level": 5.0,
+      "confidence": 0.6,
+      "target_difficulty": 6,
+      "evidence": "directly assessed"
+    },
+    {
+      "topic": "Change of basis and coordinate representations",
+      "current_level": 3.67,
+      "confidence": 0.25,
+      "target_difficulty": 5,
+      "evidence": "not yet directly assessed; inferred conservatively from overall level"
+    },
+    {
+      "topic": "Determinants and their algebraic and geometric meanings",
+      "current_level": 3.67,
+      "confidence": 0.25,
+      "target_difficulty": 5,
+      "evidence": "not yet directly assessed; inferred conservatively from overall level"
+    },
+    {
+      "topic": "Eigenvalues, eigenvectors, eigenspaces, diagonalization, and powers of matrices",
+      "current_level": 4.4,
+      "confidence": 0.52,
+      "target_difficulty": 6,
+      "evidence": "directly assessed"
+    },
+    {
+      "topic": "Orthogonality, projections, Gram-Schmidt, and least squares when included in the course",
+      "current_level": 3.67,
+      "confidence": 0.25,
+      "target_difficulty": 5,
+      "evidence": "not yet directly assessed; inferred conservatively from overall level"
+    },
+    {
+      "topic": "Proof skills: definitions, counterexamples, theorem application, and abstraction",
+      "current_level": 4.0,
+      "confidence": 0.45,
+      "target_difficulty": 5,
+      "evidence": "directly assessed"
+    }
+  ],
+  "prompt": "You are generating a personalized exercise set for Linear Algebra 1.\n\nGoal:\n- Promote the student slightly beyond their current demonstrated mastery.\n- Include exactly one question for each course topic in topic_plan.\n- Use each topic's target_difficulty as the question difficulty.\n- Make questions self-contained and mathematically precise.\n- Avoid making the set feel like a survey of trivia; each question should assess a real skill.\n- Do not include solutions or final answers.\n\nStudent:\n- student_id: student-average-001\n- source_log: mock_logs/average_student.jsonl\n\nRecent performance summary:\n{\n  \"attempt_count\": 4,\n  \"recent_average_score\": 0.672,\n  \"recent_average_attempted_difficulty\": 5.0,\n  \"common_recent_weaknesses\": [\n    \"minor arithmetic slips\",\n    \"explaining consistency criteria\",\n    \"proving closure\",\n    \"basis minimality\",\n    \"connecting kernel to injectivity\",\n    \"notation precision\"\n  ],\n  \"recent_topic_tags\": [\n    \"gaussian-elimination\",\n    \"rank\",\n    \"consistency\",\n    \"subspaces\",\n    \"basis\",\n    \"dimension\",\n    \"linear-transformations\",\n    \"kernel\"\n  ]\n}\n\nLatest or derived profile:\n{\n  \"overall_level\": 4.67,\n  \"topics\": [\n    {\n      \"topic\": \"Systems of linear equations and Gaussian elimination\",\n      \"level\": 4.9,\n      \"confidence\": 0.62,\n      \"last_assessed\": \"2026-04-18T14:10:00+03:00\"\n    },\n    {\n      \"topic\": \"Rank, nullity, the rank-nullity theorem, and consistency criteria\",\n      \"level\": 4.8,\n      \"confidence\": 0.6,\n      \"last_assessed\": \"2026-04-30T10:25:00+03:00\"\n    },\n    {\n      \"topic\": \"Subspaces, including column space, null space, row space, and their bases\",\n      \"level\": 4.7,\n      \"confidence\": 0.58,\n      \"last_assessed\": \"2026-04-23T15:35:00+03:00\"\n    },\n    {\n      \"topic\": \"Linear independence, bases, coordinates, and dimension\",\n      \"level\": 4.8,\n      \"confidence\": 0.55,\n      \"last_assessed\": \"2026-04-23T15:35:00+03:00\"\n    },\n    {\n      \"topic\": \"Proof skills: definitions, counterexamples, theorem application, and abstraction\",\n      \"level\": 4.0,\n      \"confidence\": 0.45,\n      \"last_assessed\": \"2026-04-23T15:35:00+03:00\"\n    },\n    {\n      \"topic\": \"Linear transformations, kernels, images, standard matrices, and composition\",\n      \"level\": 5.0,\n      \"confidence\": 0.6,\n      \"last_assessed\": \"2026-04-30T10:25:00+03:00\"\n    },\n    {\n      \"topic\": \"Eigenvalues, eigenvectors, eigenspaces, diagonalization, and powers of matrices\",\n      \"level\": 4.4,\n      \"confidence\": 0.52,\n      \"last_assessed\": \"2026-05-05T09:55:00+03:00\"\n    }\n  ]\n}\n\nTopic plan:\n[\n  {\n    \"topic\": \"Systems of linear equations and Gaussian elimination\",\n    \"current_level\": 4.9,\n    \"confidence\": 0.62,\n    \"target_difficulty\": 6,\n    \"evidence\": \"directly assessed\"\n  },\n  {\n    \"topic\": \"Matrix operations, inverses, and elementary matrices\",\n    \"current_level\": 3.67,\n    \"confidence\": 0.25,\n    \"target_difficulty\": 5,\n    \"evidence\": \"not yet directly assessed; inferred conservatively from overall level\"\n  },\n  {\n    \"topic\": \"Vectors, linear combinations, span, and geometric interpretation\",\n    \"current_level\": 3.67,\n    \"confidence\": 0.25,\n    \"target_difficulty\": 5,\n    \"evidence\": \"not yet directly assessed; inferred conservatively from overall level\"\n  },\n  {\n    \"topic\": \"Linear independence, bases, coordinates, and dimension\",\n    \"current_level\": 4.8,\n    \"confidence\": 0.55,\n    \"target_difficulty\": 6,\n    \"evidence\": \"directly assessed\"\n  },\n  {\n    \"topic\": \"Subspaces, including column space, null space, row space, and their bases\",\n    \"current_level\": 4.7,\n    \"confidence\": 0.58,\n    \"target_difficulty\": 6,\n    \"evidence\": \"directly assessed\"\n  },\n  {\n    \"topic\": \"Rank, nullity, the rank-nullity theorem, and consistency criteria\",\n    \"current_level\": 4.8,\n    \"confidence\": 0.6,\n    \"target_difficulty\": 6,\n    \"evidence\": \"directly assessed\"\n  },\n  {\n    \"topic\": \"Linear transformations, kernels, images, standard matrices, and composition\",\n    \"current_level\": 5.0,\n    \"confidence\": 0.6,\n    \"target_difficulty\": 6,\n    \"evidence\": \"directly assessed\"\n  },\n  {\n    \"topic\": \"Change of basis and coordinate representations\",\n    \"current_level\": 3.67,\n    \"confidence\": 0.25,\n    \"target_difficulty\": 5,\n    \"evidence\": \"not yet directly assessed; inferred conservatively from overall level\"\n  },\n  {\n    \"topic\": \"Determinants and their algebraic and geometric meanings\",\n    \"current_level\": 3.67,\n    \"confidence\": 0.25,\n    \"target_difficulty\": 5,\n    \"evidence\": \"not yet directly assessed; inferred conservatively from overall level\"\n  },\n  {\n    \"topic\": \"Eigenvalues, eigenvectors, eigenspaces, diagonalization, and powers of matrices\",\n    \"current_level\": 4.4,\n    \"confidence\": 0.52,\n    \"target_difficulty\": 6,\n    \"evidence\": \"directly assessed\"\n  },\n  {\n    \"topic\": \"Orthogonality, projections, Gram-Schmidt, and least squares when included in the course\",\n    \"current_level\": 3.67,\n    \"confidence\": 0.25,\n    \"target_difficulty\": 5,\n    \"evidence\": \"not yet directly assessed; inferred conservatively from overall level\"\n  },\n  {\n    \"topic\": \"Proof skills: definitions, counterexamples, theorem application, and abstraction\",\n    \"current_level\": 4.0,\n    \"confidence\": 0.45,\n    \"target_difficulty\": 5,\n    \"evidence\": \"directly assessed\"\n  }\n]\n\nReturn only valid JSON with this shape:\n{\n  \"schema_version\": \"1.0\",\n  \"student_id\": \"student-average-001\",\n  \"course\": \"Linear Algebra 1\",\n  \"source_log\": \"mock_logs/average_student.jsonl\",\n  \"generated_at\": \"ISO-8601 timestamp\",\n  \"overall_target_difficulty\": 1,\n  \"rationale\": \"Brief explanation of how the set is calibrated.\",\n  \"exercise_set\": {\n    \"title\": \"Personalized Linear Algebra 1 Practice\",\n    \"questions\": [\n      {\n        \"question_id\": \"q01\",\n        \"topic\": \"Systems of linear equations and Gaussian elimination\",\n        \"difficulty\": 1,\n        \"learning_goal\": \"What this question is meant to strengthen.\",\n        \"prompt\": \"The actual exercise question.\",\n        \"expected_techniques\": [\"technique 1\", \"technique 2\"]\n      }\n    ]\n  }\n}"
+}
